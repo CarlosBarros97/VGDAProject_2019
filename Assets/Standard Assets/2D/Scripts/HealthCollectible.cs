@@ -6,7 +6,7 @@ public class HealthCollectible : MonoBehaviour
 { public float LifeAdd = 20f;
     void OnTriggerEnter2D(Collider2D collision)
     {
-     HealthDrain.HealthValue = HealthDrain.HealthValue + 20f;
+     HealthDrain.HealthValue = HealthDrain.HealthValue + LifeAdd;
      Destroy(gameObject);
     }
 }
