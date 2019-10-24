@@ -20,6 +20,7 @@ public class DamageScript : MonoBehaviour
             if(InvincibleTimer <= 0)
             {
              Invincible = false;
+             InvincibleTimer = 2f;
             }
         }
     }
