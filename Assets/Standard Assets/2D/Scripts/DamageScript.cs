@@ -31,7 +31,6 @@ public class DamageScript : MonoBehaviour
         {
             HealthDrain.HealthValue = HealthDrain.HealthValue - LifeTake;
             Invincible = true;
-
         }
     }
 }
