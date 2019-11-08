@@ -15,7 +15,7 @@ public class PatrolScript : MonoBehaviour
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-        if (groundInfo.collider == false)
+        if (Physics2D.Raycast(groundDetection.position, Vector2.down, distance) && groundInfo.transform.tag == "Floor")
         {
             if (movingRight == true)
             {
