@@ -7,7 +7,6 @@ public class PatrolScript : MonoBehaviour
     public float speed;
     public float distance;
     private bool movingRight = true;
-    public Transform groundDetection;
     //Added groundLayer instead of GameObject Tag for Performance
     public LayerMask GroundLayer;
 
@@ -19,19 +18,22 @@ public class PatrolScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance,GroundLayer);
+        transform.Translate(((movingRight) ? Vector2.right : Vector2.left) * speed * Time.deltaTime);
+
+        RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, distance, GroundLayer);
+        
         if (!groundInfo)
         {
+            Debug.Log("I am not hitting anything");
             if (movingRight == true)
             {
-                transform.eulerAngles = new Vector3(0, -180, 0);
+                Debug.Log("changing to move left");
                 movingRight = false;
             }
             else
             {
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                Debug.Log("changing to move right");
                 movingRight = true;
             }
         }
