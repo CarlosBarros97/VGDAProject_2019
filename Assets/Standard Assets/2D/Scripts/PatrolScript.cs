@@ -11,6 +11,11 @@ public class PatrolScript : MonoBehaviour
     //Added groundLayer instead of GameObject Tag for Performance
     public LayerMask GroundLayer;
 
+    //enemy stats
+    [SerializeField]
+    public int CurrentHealth = 1;
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -30,5 +35,17 @@ public class PatrolScript : MonoBehaviour
                 movingRight = true;
             }
         }
+
+        if(CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    public void Damage(int d)
+    {
+        CurrentHealth -= d;
+        
+    }
+
 }
