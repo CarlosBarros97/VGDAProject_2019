@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageScript : MonoBehaviour
 {
-    bool Invincible;
+    bool Invincible; //invincibility frames
     public float LifeTake = 20f;
     float InvincibleTimer = 2f;
     void Start()
@@ -16,8 +16,8 @@ public class DamageScript : MonoBehaviour
     {
         if(Invincible == true)
         {
-            InvincibleTimer = InvincibleTimer - Time.deltaTime;
-            if(InvincibleTimer <= 0)
+            InvincibleTimer = InvincibleTimer - Time.deltaTime; //timer counts down
+            if(InvincibleTimer <= 0) //stops when reaching 0
             {
              Invincible = false;
              InvincibleTimer = 2f;
@@ -29,8 +29,8 @@ public class DamageScript : MonoBehaviour
     {
         if (Invincible == false)
         {
-            HealthDrain.HealthValue = HealthDrain.HealthValue - LifeTake;
-            Invincible = true;
+            HealthDrain.HealthValue = HealthDrain.HealthValue - LifeTake; //take damage
+            Invincible = true; //adds i-frames
 
         }
     }
