@@ -7,13 +7,18 @@ namespace UnityStandardAssets._2D
     {
         [SerializeField] private float m_MaxSpeed = 20f;                    // Base speed the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.      
-        [SerializeField] private float m_JumpPushForce = 10f;               // Wall jump force
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private LayerMask m_WhatIsWall;                    // Mask determining what is a wall
         [Range(1, 2)] [SerializeField] private float m_SlideSpeed = 1.2f;   // Speed for sliding
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [Range(1, 2)] [SerializeField] private float m_SprintSpeed = 1.5f;  // Players sprint speed
+
+        // Dodge/Dash Mechanic
+        [SerializeField] public float dashSpeed = 40f;
+        private float dashTime;
+        [SerializeField] public float startDashTime = 0.05f;
+        private int direction;
 
         private Transform m_GroundCheck;        // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f;     // Radius of the overlap circle to determine if grounded
@@ -26,9 +31,7 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;                // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;      // For determining which way the player is currently facing.
-        private bool _isSliding = false;        // Check to see if player is sliding
-        private bool _doubleJump = false;       // Allows for double jump mechanic
-
+       
         private void Awake()
         {
             // Setting up references.
@@ -54,7 +57,6 @@ namespace UnityStandardAssets._2D
                 if (colliders[i].gameObject != gameObject)
                 {
                     m_Grounded = true;
-                    _doubleJump = false;
                 }
             }
 
@@ -62,7 +64,7 @@ namespace UnityStandardAssets._2D
             if (m_TouchingWall)
             {
                 m_Grounded = false;
-                _doubleJump = false;
+
             }
 
             
@@ -91,18 +93,7 @@ namespace UnityStandardAssets._2D
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
             {
-                
-                if (sprint && crouch)
-                {
-                    // Reduce the speed if crouching by the crouchSpeed multiplier
-                    move = (move * m_SlideSpeed * m_SprintSpeed);
-                }
-                else if (sprint)
-                {
-                    // Increase the speed if sprinting
-                    move = (move * m_SprintSpeed);
-                }
-                else if (crouch)
+                if (crouch)
                 {
                     move = (move * m_CrouchSpeed);
                 }
@@ -127,26 +118,19 @@ namespace UnityStandardAssets._2D
                 }
             }
             // If the player should jump...
-            if ((m_Grounded || !_doubleJump) && jump && m_Anim.GetBool("Ground"))
+            if ((m_Grounded && jump && m_Anim.GetBool("Ground")) || (m_TouchingWall && jump))
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-                if(!_doubleJump && !m_Grounded)
-                {
-                    _doubleJump = true;
-                }
             }
-            // If player is touching a wall, jump
-            if(m_TouchingWall && jump)
+            // If the player should dash...
+            if((m_Grounded || m_AirControl) && sprint)
             {
-                WallJump();
+                Dash();
             }
-            Debug.Log("Am I touching the wall: " + m_TouchingWall);
-            Debug.Log("Did I jump again: " + _doubleJump);
-            Debug.Log("Am I grounded: " + m_Grounded);
 
         }
 
@@ -162,9 +146,59 @@ namespace UnityStandardAssets._2D
             transform.localScale = theScale;
         }
 
-        private void WallJump()
+        private void Dash()
         {
-            m_Rigidbody2D.AddForce(new Vector2(m_JumpPushForce, m_JumpForce));
+            if (direction == 0)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    direction = 1;
+                }
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    direction = 2;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    direction = 3;
+                }
+                else if (Input.GetKeyDown(KeyCode.A))
+                {
+                    direction = 4;
+                }
+            }
+            else
+            {
+                if (dashTime <= 0)
+                {
+                    direction = 0;
+                    dashTime = startDashTime;
+                    m_Rigidbody2D.velocity = Vector2.zero;
+                    Debug.Log("Is not Dashing");
+                }
+                else
+                {
+                    dashTime -= Time.deltaTime;
+
+                    if (direction == 1)
+                    {
+                        m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
+                    }
+                    else if (direction == 2)
+                    {
+                        m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
+                    }
+                    else if (direction == 3)
+                    {
+                        m_Rigidbody2D.velocity = Vector2.up * dashSpeed;
+                    }
+                    else if (direction == 4)
+                    {
+                        m_Rigidbody2D.velocity = Vector2.down * dashSpeed;
+                    }
+                    Debug.Log("Is Dashing");
+                }
+            }
         }
     }
 }

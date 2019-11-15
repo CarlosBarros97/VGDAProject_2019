@@ -29,9 +29,14 @@ public class DamageScript : MonoBehaviour
     {
         if (Invincible == false)
         {
+<<<<<<< HEAD
             HealthDrain.HealthValue = HealthDrain.HealthValue - LifeTake; //take damage
             Invincible = true; //adds i-frames
 
+=======
+            HealthDrain.HealthValue = HealthDrain.HealthValue - LifeTake;
+            Invincible = true;
+>>>>>>> 7566ba911d1fcddbf0c63e87ca09c30022deedfb
         }
     }
 }
