@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
-<<<<<<< HEAD
-{ public float LifeAdd = 20f; 
-    void OnTriggerEnter2D(Collider2D collision) //collider touches collectible 
-=======
-{   public float LifeAdd = 20f;
+//<<<<<<< HEAD
+{
+    public float LifeAdd = 20f;
+//collider touches collectible 
+//=======
     private bool movingUp = true;
     public float changeTimer = .5f;
     public float speed = 1f;
@@ -35,7 +35,7 @@ public class HealthCollectible : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collision)
->>>>>>> 7566ba911d1fcddbf0c63e87ca09c30022deedfb
+//>>>>>>> 7566ba911d1fcddbf0c63e87ca09c30022deedfb
     {
      HealthDrain.HealthValue = HealthDrain.HealthValue + LifeAdd; //HealthDrain.HealthValue += LifeAdd;
      Destroy(gameObject);
