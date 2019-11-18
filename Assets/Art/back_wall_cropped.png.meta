@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 00cbcd4752c0e164b8ea93d818c1ecf2
+guid: dbabaebbf2ba072499cc006b7146316e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5557783017267065809
-    second: background_gate_0
+      213: -6548510074475069736
+    second: back_wall_cropped_0
   - first:
-      213: -5873930458357970501
-    second: background_gate_1
+      213: 7667946520212439106
+    second: back_wall_cropped_1
   - first:
-      213: -4063049438467869124
-    second: background_gate_2
+      213: 5668810290164979909
+    second: back_wall_cropped_2
   - first:
-      213: -7112682499538812703
-    second: background_gate_3
+      213: -4326344604238564514
+    second: back_wall_cropped_3
   - first:
-      213: -6525584121762964638
-    second: background_gate_4
+      213: 7328722204256091508
+    second: back_wall_cropped_4
   - first:
-      213: 990027431540010403
-    second: background_gate_5
+      213: 5287260338900306777
+    second: back_wall_cropped_5
   - first:
-      213: -4979622648756299780
-    second: background_gate_6
+      213: -8262209781666146537
+    second: back_wall_cropped_6
   - first:
-      213: -6480073232705466875
-    second: background_gate_7
+      213: -8287071759206216241
+    second: back_wall_cropped_7
   - first:
-      213: -1379339608604069720
-    second: background_gate_8
+      213: 3302749149776267210
+    second: back_wall_cropped_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -61,19 +61,19 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
-  spriteBorder: {x: 27, y: 0, z: 32, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_gate_0
+      name: back_wall_cropped_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 758
-        width: 640.6667
-        height: 379
+        y: 760.6666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5223b0f67949e994ca68874a4164d71f
-      internalID: 5557783017267065809
+      spriteID: 2a0c9dd8a64afa8409ef49a1052d4fe0
+      internalID: -6548510074475069736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_gate_1
+      name: back_wall_cropped_1
       rect:
         serializedVersion: 2
-        x: 640
-        y: 758
-        width: 640.6667
-        height: 379
+        x: 601
+        y: 760.6666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d770c076308531c438c71844294c18de
-      internalID: -5873930458357970501
+      spriteID: d934cc761be7ff545804de15883d035c
+      internalID: 7667946520212439106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_gate_2
+      name: back_wall_cropped_2
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 758
-        width: 640.6667
-        height: 379
+        x: 1202
+        y: 760.6666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,83 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e07bfdb1071284c8a9fabec5d1b84d
-      internalID: -4063049438467869124
+      spriteID: 6bd0a23df59000b4aad57439fd24b338
+      internalID: 5668810290164979909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_gate_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 379
-        width: 640.6667
-        height: 379
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d602d6e39554bc546bade33af74849c4
-      internalID: -7112682499538812703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: background_gate_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 379
-        width: 640.6667
-        height: 379
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 744a262d439be94499a1dc39fefb2bc9
-      internalID: -6525584121762964638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: background_gate_5
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 379
-        width: 640.6667
-        height: 379
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 745c735a50dc2274aa3d8a8bc4729f37
-      internalID: 990027431540010403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: background_gate_6
+      name: back_wall_cropped_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 640.6667
-        height: 379
+        y: 380.66666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98e3697a11add7546b99fbe363242393
-      internalID: -4979622648756299780
+      spriteID: 4cb166ad611b869458ef989624e160d9
+      internalID: -4326344604238564514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_gate_7
+      name: back_wall_cropped_4
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 640.6667
-        height: 379
+        x: 601
+        y: 380.66666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1705ea789765ea42b33415fb0e6261f
-      internalID: -6480073232705466875
+      spriteID: 6b934f8411a6b1c4a9c5ebbdcc633c95
+      internalID: 7328722204256091508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_gate_8
+      name: back_wall_cropped_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 640.6667
-        height: 379
+        x: 1202
+        y: 380.66666
+        width: 601.3333
+        height: 380.33334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,8 +232,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72256805a68be7c408e80986ef4cdded
-      internalID: -1379339608604069720
+      spriteID: d2f315d754c2b054a8cdf29dfcedad50
+      internalID: 5287260338900306777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_wall_cropped_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.6666565
+        width: 601.3333
+        height: 380.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2513b32e3ab2b9b45855445f1cbc7327
+      internalID: -8262209781666146537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_wall_cropped_7
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0.6666565
+        width: 601.3333
+        height: 380.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7477bf13e5908f84f99a28e1520b7a49
+      internalID: -8287071759206216241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_wall_cropped_8
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 0.6666565
+        width: 601.3333
+        height: 380.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1431fb9cefd7b6d4186a9325ce0f4ba3
+      internalID: 3302749149776267210
       vertices: []
       indices: 
       edges: []
