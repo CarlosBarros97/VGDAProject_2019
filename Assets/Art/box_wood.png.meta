@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d04e659b9a490a047a8c4790d31403b0
+=======
+guid: 6d343c83a34b020449a117221d740242
+>>>>>>> origin/AY_Branch
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
