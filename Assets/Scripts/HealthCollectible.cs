@@ -12,6 +12,7 @@ public class HealthCollectible : MonoBehaviour
 
     public HealthDrain PlayerHP;
 
+    
     void Update()
     {
         transform.Translate(((movingUp) ? Vector2.up : Vector2.down) * speed * Time.deltaTime);
@@ -34,10 +35,10 @@ public class HealthCollectible : MonoBehaviour
             }
         }
     }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
-     PlayerHP.HealthValue = PlayerHP.HealthValue + LifeAdd; //PlayerHP.HealthValue += LifeAdd;
-     Destroy(gameObject);
+        Debug.Log("Entered pudding");
+        PlayerHP.HealthValue = PlayerHP.HealthValue + LifeAdd; //PlayerHP.HealthValue += LifeAdd;
+        Destroy(gameObject);
     }
 }
