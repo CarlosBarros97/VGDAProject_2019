@@ -10,6 +10,8 @@ public class PatrolScript : MonoBehaviour
     private bool movingRight = true;
     //Added groundLayer instead of GameObject Tag for Performance
     public LayerMask GroundLayer;
+    public HealthDrain PlayerHP;
+    public float LifeAdd = 20f;
 
     //enemy stats
     [SerializeField]
@@ -22,34 +24,34 @@ public class PatrolScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.Translate(((movingRight) ? Vector2.right : Vector2.left) * speed * Time.deltaTime);
-
-        RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, RaycastDistance, GroundLayer);
-
-        anim.SetBool("MovingRight",movingRight);
-
-        if (!groundInfo)
-        {
-            Debug.Log("I am not hitting anything");
-            if (movingRight == true)
+            if (CurrentHealth <= 0)
             {
-                Debug.Log("changing to move left");
-                movingRight = false;
-                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+                PlayerHP.HealthValue = PlayerHP.HealthValue + LifeAdd;
+                Destroy(gameObject);
             }
-            else
-            {
-                Debug.Log("changing to move right");
-                movingRight = true;
-                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
-            }
-        }
+            
+            transform.Translate(((movingRight) ? Vector2.right : Vector2.left) * speed * Time.deltaTime);
 
-        if(CurrentHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+            RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, RaycastDistance, GroundLayer);
+
+            //anim.SetBool("MovingRight",movingRight);
+
+            if (!groundInfo)
+            {
+                Debug.Log("I am not hitting anything");
+                if (movingRight == true)
+                {
+                    Debug.Log("changing to move left");
+                    movingRight = false;
+                    gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+                }
+                else
+                {
+                    Debug.Log("changing to move right");
+                    movingRight = true;
+                    gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+                }
+            }
     }
 
     public void Damage(int d)
