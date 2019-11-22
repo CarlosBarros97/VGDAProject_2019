@@ -19,4 +19,8 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void goDemoSecene()
+    {
+        SceneManager.LoadScene("DemoLevel");
+    }
 }

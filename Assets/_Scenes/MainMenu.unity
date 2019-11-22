@@ -474,7 +474,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To Prototype Scene
+  m_Text: To Demo Scene
 --- !u!222 &1438574769
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 175845020}
-        m_MethodName: goPrototypeScene
+        m_MethodName: goDemoSecene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
