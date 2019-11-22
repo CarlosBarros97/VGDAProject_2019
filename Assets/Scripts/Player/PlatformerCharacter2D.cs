@@ -28,10 +28,10 @@ namespace UnityStandardAssets._2D
         private Transform m_WallCheck;          // A position marking where to check for ceilings
         const float k_WallTouchRadius = 0.1f;   // Radius of the overlap circle to determine if player touches wall
         private bool m_TouchingWall = false;    // Will only trigger when player touches a wall layered component
-        private Animator m_Anim;                // Reference to the player's animator component.
+        Animator m_Anim;                // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;      // For determining which way the player is currently facing.
-       
+
         private void Awake()
         {
             // Setting up references.
@@ -46,7 +46,7 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-            m_Grounded = false;
+            m_Grounded = true;
             m_TouchingWall = false;
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -68,7 +68,7 @@ namespace UnityStandardAssets._2D
             }
 
             
-            m_Anim.SetBool("Ground", m_Grounded);
+            m_Anim.SetBool("Grounded", m_Grounded);
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
@@ -122,7 +122,8 @@ namespace UnityStandardAssets._2D
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
-                m_Anim.SetBool("Ground", false);
+                m_Anim.SetTrigger("isJumping");
+                m_Anim.SetBool("Grounded", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
             }
@@ -131,7 +132,6 @@ namespace UnityStandardAssets._2D
             {
                 Dash();
             }
-
         }
 
 
