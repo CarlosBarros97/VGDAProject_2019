@@ -397,7 +397,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Untitled 2D Platformer
+  m_Text: Sanguine
 --- !u!222 &1112959572
 CanvasRenderer:
   m_ObjectHideFlags: 0

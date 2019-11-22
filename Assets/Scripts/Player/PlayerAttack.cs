@@ -40,6 +40,7 @@ public class PlayerAttack : MonoBehaviour
             else
             {
                 attacking = false;
+                anim.ResetTrigger("Attacking");
                 attackTrigger.enabled = false;
             }
         }
