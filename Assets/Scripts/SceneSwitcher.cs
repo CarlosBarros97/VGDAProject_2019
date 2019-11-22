@@ -10,18 +10,13 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void goPrototypeScene()
-    {
-        SceneManager.LoadScene("PrototypeScene");
-    }
-
-    public void goSampleScene()
-    {
-        SceneManager.LoadScene("SampleScene");
-    }
-
     public void goLevel1()
     {
         SceneManager.LoadScene("Level1");
+    }
+
+    public void goHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
     }
 }

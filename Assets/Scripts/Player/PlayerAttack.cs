@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     private bool attacking = false;
-
+    private float animTimer = 1.5f;
     private float attackTimer = 0f;
     [SerializeField]
-    private float attackCD = .3f;
+    private float attackCD = .5f;
 
     public Collider2D attackTrigger;
 
@@ -20,7 +20,11 @@ public class PlayerAttack : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         attackTrigger.enabled = false;
     }
-
+    private void setParam()
+    {
+        //b = false;
+        anim.SetBool("Attacking", false);
+    }
     private void Update()
     {
         if((Input.GetKeyDown("z") || Input.GetKeyDown("k")) && !attacking)
@@ -36,14 +40,21 @@ public class PlayerAttack : MonoBehaviour
             if(attackTimer > 0)
             {
                 attackTimer -= Time.deltaTime;
+                animTimer -= Time.deltaTime;
+                
             }
             else
             {
                 attacking = false;
-                anim.SetBool("Attacking", false);
                 attackTrigger.enabled = false;
+                Invoke("setParam", .5f);
             }
+            
         }
+
+        
+        
+
         //remove if attack animation gets implimented
     }
 }
