@@ -719,7 +719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608369399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.4, y: 6.1, z: -10}
+  m_LocalPosition: {x: 63.86, y: 6.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 193485200}
@@ -804,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661341938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.4, y: 6.1, z: -10}
+  m_LocalPosition: {x: 63.86, y: 6.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1482,12 +1482,12 @@ PrefabInstance:
     - target: {fileID: 480847784353991456, guid: 53caa86f745bfaf42b3760b426950baa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.23
+      value: 88.16
       objectReference: {fileID: 0}
     - target: {fileID: 480847784353991456, guid: 53caa86f745bfaf42b3760b426950baa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.03
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 480847784353991456, guid: 53caa86f745bfaf42b3760b426950baa,
         type: 3}
@@ -1888,7 +1888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.4
+      value: 63.86
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2573,6 +2573,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6803976759589732123, guid: e7ffe814b63523844932d21fa1e24621,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6803976759589732118, guid: e7ffe814b63523844932d21fa1e24621,
         type: 3}
       propertyPath: speed
@@ -2588,10 +2593,5 @@ PrefabInstance:
       propertyPath: PlayerHP
       value: 
       objectReference: {fileID: 464653301}
-    - target: {fileID: 6803976759589732123, guid: e7ffe814b63523844932d21fa1e24621,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7ffe814b63523844932d21fa1e24621, type: 3}
