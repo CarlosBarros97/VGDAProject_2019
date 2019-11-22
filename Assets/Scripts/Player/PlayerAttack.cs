@@ -13,11 +13,11 @@ public class PlayerAttack : MonoBehaviour
     public Collider2D attackTrigger;
 
     //can remove comments if we get an attack animation
-    //private Animator anim;
+    private Animator anim;
 
     void Awake()
     {
-        //anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         attackTrigger.enabled = false;
     }
 
@@ -28,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
             attacking = true;
             attackTimer = attackCD;
             attackTrigger.enabled = true;
+            anim.SetTrigger("Attacking");
         }
 
         if (attacking)
@@ -43,6 +44,5 @@ public class PlayerAttack : MonoBehaviour
             }
         }
         //remove if attack animation gets implimented
-       // anim.SetBool("Attacking", attacking);
     }
 }
