@@ -20,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     float InvincibleTimer = 2f;
     private float FlickeringTimer = 0.1f;
     private bool SpriteDisabled = false;
-    public GameObject player = GameObject.FindGameObjectWithTag("Player");
+    //public GameObject player = GameObject.FindGameObjectWithTag("Player");
     private SpriteRenderer spriteRenderer;
     private float EmergencyTimer = 2f;
 
@@ -32,7 +32,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Start()
     {
-        spriteRenderer = player.GetComponent<SpriteRenderer>();
+        //spriteRenderer = player.GetComponent<SpriteRenderer>();
         Invincible = false;
     }
     void Awake()
@@ -43,7 +43,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void Update()
     {
-
+        /*
         if(spriteRenderer.enabled == false)
         {
             EmergencyTimer -= Time.deltaTime;
@@ -52,10 +52,10 @@ public class EnemyAttack : MonoBehaviour
                 spriteRenderer.enabled = true;
             }
         }
-
+        */
         if (Invincible == true)
         {
-            SpriteFlickering();
+           // SpriteFlickering();
             InvincibleTimer = InvincibleTimer - Time.deltaTime; //timer counts down
             if (InvincibleTimer <= 0) //stops when reaching 0
             {

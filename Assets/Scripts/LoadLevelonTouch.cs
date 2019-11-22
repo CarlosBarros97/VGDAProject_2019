@@ -23,12 +23,12 @@ public class LoadLevelonTouch : MonoBehaviour
     {
         if(col.gameObject.tag == "Player" && CurrentScene == "Level1")
         {
-            SceneManager.LoadScene("Level2");
-        }
-        if (col.gameObject.tag == "Player" && CurrentScene == "Level2")
-        {
             SceneManager.LoadScene("Level3");
         }
+        //if (col.gameObject.tag == "Player" && CurrentScene == "Level2")
+        //{
+        //    SceneManager.LoadScene("Level3");
+       // }
         if (col.gameObject.tag == "Player" && CurrentScene == "Level3")
         {
             SceneManager.LoadScene("LevelEnd");
