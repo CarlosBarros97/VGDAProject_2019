@@ -31,7 +31,8 @@ namespace UnityStandardAssets._2D
         Animator m_Anim;                // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;      // For determining which way the player is currently facing.
-
+        private bool jumped = false;
+        private Collider2D Col;
         private void Awake()
         {
             // Setting up references.
@@ -43,6 +44,30 @@ namespace UnityStandardAssets._2D
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
+        void Start()
+        {
+            Col = gameObject.GetComponent<CircleCollider2D>();
+        }
+        private void Update()
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (jumped == false)
+                {
+                    jumped = true;
+                    m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                }
+            }
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Floor"))
+            {
+                jumped = false;
+            }
+
+        }
 
         private void FixedUpdate()
         {
@@ -124,7 +149,7 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetTrigger("isJumping");
                 m_Anim.SetBool("Grounded", false);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                //m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
             }
             // If the player should dash...
@@ -200,5 +225,5 @@ namespace UnityStandardAssets._2D
                 }
             }
         }
+        }
     }
-}

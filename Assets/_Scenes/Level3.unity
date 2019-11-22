@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_rock3_Small (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1895283320698555097, guid: d294dbd7001afac4c97a4914e0b3abaa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1895283320698555098, guid: d294dbd7001afac4c97a4914e0b3abaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -379,6 +384,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_rock3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,6 +482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: box_rock3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
@@ -689,6 +709,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -842,6 +867,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Aerial (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285630, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 252285417233325532, guid: 4bb0fb02665b32a459d35da553e528f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,6 +940,41 @@ PrefabInstance:
     - target: {fileID: 1381264094, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285616, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285624, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285626, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2437123
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3990395
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 2.1472273
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.2571316
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
@@ -1270,6 +1345,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_rock3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1339,6 +1424,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Aerial
       objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285630, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 252285417233325532, guid: 4bb0fb02665b32a459d35da553e528f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1393,6 +1493,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285616, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285624, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285626, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2889805
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.34439945
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 2.1420412
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417237189500, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.2591267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
@@ -1516,6 +1651,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Aerial (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285630, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 252285417233325532, guid: 4bb0fb02665b32a459d35da553e528f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1574,6 +1724,21 @@ PrefabInstance:
     - target: {fileID: 1381264094, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285616, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285624, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285626, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
@@ -2242,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61946edad8343d4f81feeaaf8685e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 10
 --- !u!1 &1381264093 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
@@ -2293,6 +2458,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Platform_Aerial (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285628, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285630, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 252285417233325532, guid: 4bb0fb02665b32a459d35da553e528f3,
         type: 3}
@@ -2352,6 +2532,21 @@ PrefabInstance:
     - target: {fileID: 1381264094, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285616, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285624, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 252285417233285626, guid: 4bb0fb02665b32a459d35da553e528f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb0fb02665b32a459d35da553e528f3, type: 3}
@@ -2571,6 +2766,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6033695662925132676, guid: 974e574e8a6502042a569cf840519d57,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6033695662925132679, guid: 974e574e8a6502042a569cf840519d57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2739,6 +2939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_rock3_Small (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1895283320698555097, guid: d294dbd7001afac4c97a4914e0b3abaa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1895283320698555098, guid: d294dbd7001afac4c97a4914e0b3abaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2807,6 +3012,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: box_rock3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
@@ -2935,6 +3150,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: box_rock3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
@@ -3149,17 +3374,17 @@ PrefabInstance:
     - target: {fileID: 327856080093462196, guid: af5ab6e399aa46b4b84b0ea77af42e32,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.76086485
+      value: -0.68868464
       objectReference: {fileID: 0}
     - target: {fileID: 327856080093462196, guid: af5ab6e399aa46b4b84b0ea77af42e32,
         type: 3}
       propertyPath: m_Radius
-      value: 0.17030562
+      value: 0.15739304
       objectReference: {fileID: 0}
     - target: {fileID: 327856080093462196, guid: af5ab6e399aa46b4b84b0ea77af42e32,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.055657152
+      value: -0.080646545
       objectReference: {fileID: 0}
     - target: {fileID: 327856080096415156, guid: af5ab6e399aa46b4b84b0ea77af42e32,
         type: 3}
@@ -3200,6 +3425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpikedFloor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773784322435105723, guid: 71cee23b146ff544fa85df236702a630,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1773784322435105720, guid: 71cee23b146ff544fa85df236702a630,
         type: 3}
@@ -3290,6 +3520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpikedFloor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773784322435105723, guid: 71cee23b146ff544fa85df236702a630,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1773784322435105720, guid: 71cee23b146ff544fa85df236702a630,
         type: 3}
@@ -3614,6 +3849,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_rock3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6033695662925132676, guid: 974e574e8a6502042a569cf840519d57,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033695662925132676, guid: 974e574e8a6502042a569cf840519d57,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6033695662925132679, guid: 974e574e8a6502042a569cf840519d57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3692,6 +3937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}

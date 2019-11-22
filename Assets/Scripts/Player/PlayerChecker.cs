@@ -38,7 +38,7 @@ public class PlayerChecker : MonoBehaviour
 
         if (rb.velocity.y > 0)
         {
-            anim.SetBool("isJumping", false);
+            anim.SetBool("isJumping", true);
         }
 
         if (rb.velocity.y <= 0)

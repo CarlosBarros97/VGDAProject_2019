@@ -5,9 +5,9 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     private bool movingRight = true;
-    private float DirectionTimer = 15f;
+    private float DirectionTimer = 2.8f;
     private float changeTimer;
-    public float speed = 1f;
+    public float speed = 2f;
 
     private void Start()
     {
