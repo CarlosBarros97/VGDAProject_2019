@@ -9,12 +9,11 @@ public class PlatformManager : MonoBehaviour
     [SerializeField]
     GameObject FallingPlatform;
 
-    [SerializeField]
-    private float distanceX;
-    [SerializeField]
-    private float distanceY;
-
-     void Awake()
+    public float distanceX1 = -5f;
+    public float distanceY1 = 0.25f;
+    public float distanceX2 = -5f;
+    public float distanceY2 = 0.25f;
+    void Awake()
     {
         if (Instance == null)
             Instance = this;
@@ -24,7 +23,8 @@ public class PlatformManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(FallingPlatform, new Vector2(distanceX,distanceY), FallingPlatform.transform.rotation);
+        Instantiate(FallingPlatform, new Vector2(distanceX1, distanceY1), FallingPlatform.transform.rotation);
+        Instantiate(FallingPlatform, new Vector2(distanceX2, distanceY2), FallingPlatform.transform.rotation);
     }
 
   IEnumerator SpawnPlatform(Vector2 spawnPosition)
