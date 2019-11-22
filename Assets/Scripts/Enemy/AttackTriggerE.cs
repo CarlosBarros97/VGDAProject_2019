@@ -15,8 +15,6 @@ public class AttackTriggerE : MonoBehaviour
                 PlayerHP.HealthValue = PlayerHP.HealthValue - Hitting.LifeTake; //take damage
                 Hitting.Invincible = true; //adds i-frames
 
-                PlayerHP.HealthValue = PlayerHP.HealthValue - Hitting.LifeTake;
-                Hitting.Invincible = true;
             }
         }
     }
