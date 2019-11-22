@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/PrototypeScene.unity
     guid: 2086bec824f97d24ba582654d7f7ed1a
   - enabled: 1
     path: Assets/_Scenes/GameOver.unity
     guid: 614f87fd09ee31b439302dbd616d465a
+  - enabled: 1
+    path: Assets/_Scenes/DemoLevel.unity
+    guid: 50013db049fdb4b769fb56ef8ef5d77a
   m_configObjects: {}
