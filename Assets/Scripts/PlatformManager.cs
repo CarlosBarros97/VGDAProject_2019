@@ -9,6 +9,11 @@ public class PlatformManager : MonoBehaviour
     [SerializeField]
     GameObject FallingPlatform;
 
+    [SerializeField]
+    private float distanceX;
+    [SerializeField]
+    private float distanceY;
+
      void Awake()
     {
         if (Instance == null)
@@ -19,8 +24,7 @@ public class PlatformManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(FallingPlatform, new Vector2(3.716f,-1.97f), FallingPlatform.transform.rotation);
-        Instantiate(FallingPlatform, new Vector2(-0.534f, 0.25f), FallingPlatform.transform.rotation);
+        Instantiate(FallingPlatform, new Vector2(distanceX,distanceY), FallingPlatform.transform.rotation);
     }
 
   IEnumerator SpawnPlatform(Vector2 spawnPosition)
