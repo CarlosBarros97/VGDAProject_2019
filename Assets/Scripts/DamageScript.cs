@@ -16,7 +16,6 @@ public class DamageScript : MonoBehaviour
     void Start()
     {
         spriteRenderer = player.GetComponent<SpriteRenderer>();
-
         Invincible = false;
     }
 
@@ -24,12 +23,13 @@ public class DamageScript : MonoBehaviour
     {
         if (Invincible == true)
         {
-            //SpriteFlickering();
+            SpriteFlickering();
             InvincibleTimer = InvincibleTimer - Time.deltaTime; //timer counts down
             if (InvincibleTimer <= 0) //stops when reaching 0
             {
                 Invincible = false;
                 InvincibleTimer = 2f;
+                spriteRenderer.enabled = true;
             }
         }
     }
