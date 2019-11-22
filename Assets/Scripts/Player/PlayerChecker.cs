@@ -38,12 +38,12 @@ public class PlayerChecker : MonoBehaviour
 
         if (rb.velocity.y > 0)
         {
-            anim.SetTrigger("isJumping");
+            anim.SetBool("isJumping", false);
         }
 
         if (rb.velocity.y <= 0)
         {
-            anim.ResetTrigger("isJumping");
+            anim.SetBool("isJumping", false);
         }
 
         if (rb.velocity.y < 0)

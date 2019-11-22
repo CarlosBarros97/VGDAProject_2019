@@ -180,6 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252285417233325532}
+  - component: {fileID: 1381264094}
   m_Layer: 0
   m_Name: Platform_Aerial
   m_TagString: Untagged
@@ -205,6 +206,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1381264094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252285417233285628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb89a0f6d9f314ebe46fd9d2d446f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252285417233285630
 GameObject:
   m_ObjectHideFlags: 0
