@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
             attacking = true;
             attackTimer = attackCD;
             attackTrigger.enabled = true;
-            anim.SetTrigger("Attacking");
+            anim.SetBool("Attacking", true);
         }
 
         if (attacking)
@@ -40,7 +40,7 @@ public class PlayerAttack : MonoBehaviour
             else
             {
                 attacking = false;
-                anim.ResetTrigger("Attacking");
+                anim.SetBool("Attacking", false);
                 attackTrigger.enabled = false;
             }
         }

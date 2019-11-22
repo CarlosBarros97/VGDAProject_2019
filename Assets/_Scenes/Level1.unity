@@ -898,6 +898,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stoneWallSmall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4708577580512078949, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4708577580512078950, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1793,6 +1798,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stoneWallSmall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4708577580512078949, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4708577580512078950, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1930,6 +1940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stoneWallSmall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708577580512078949, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4708577580512078950, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
         type: 3}
@@ -6162,12 +6177,12 @@ PrefabInstance:
     - target: {fileID: 1882393958553992332, guid: b558ba7e3eb631f44a789205f49b8764,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.218857
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 1882393958553992332, guid: b558ba7e3eb631f44a789205f49b8764,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.672288
+      value: -5.95
       objectReference: {fileID: 0}
     - target: {fileID: 1882393958553992332, guid: b558ba7e3eb631f44a789205f49b8764,
         type: 3}
@@ -6462,6 +6477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stoneWallSmall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708577580512078949, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4708577580512078950, guid: fc2eb4f7eee79b6478b022d2b0cdb743,
         type: 3}

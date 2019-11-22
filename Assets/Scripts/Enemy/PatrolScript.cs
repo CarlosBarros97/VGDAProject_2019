@@ -19,45 +19,45 @@ public class PatrolScript : MonoBehaviour
 
     [SerializeField]
     Animator anim;
-    
+
 
     // Update is called once per frame
     void Update()
     {
-            if (CurrentHealth <= 0)
+        if (CurrentHealth <= 0)
+        {
+            PlayerHP.HealthValue = PlayerHP.HealthValue + LifeAdd;
+            Destroy(gameObject);
+        }
+
+        transform.Translate(((movingRight) ? Vector2.right : Vector2.left) * speed * Time.deltaTime);
+
+        RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, RaycastDistance, GroundLayer);
+
+        //anim.SetBool("MovingRight",movingRight);
+
+        if (!groundInfo)
+        {
+            Debug.Log("I am not hitting anything");
+            if (movingRight == true)
             {
-                PlayerHP.HealthValue = PlayerHP.HealthValue + LifeAdd;
-                Destroy(gameObject);
+                Debug.Log("changing to move left");
+                movingRight = false;
+                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
             }
-            
-            transform.Translate(((movingRight) ? Vector2.right : Vector2.left) * speed * Time.deltaTime);
-
-            RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, RaycastDistance, GroundLayer);
-
-            //anim.SetBool("MovingRight",movingRight);
-
-            if (!groundInfo)
+            else
             {
-                Debug.Log("I am not hitting anything");
-                if (movingRight == true)
-                {
-                    Debug.Log("changing to move left");
-                    movingRight = false;
-                    gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
-                }
-                else
-                {
-                    Debug.Log("changing to move right");
-                    movingRight = true;
-                    gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
-                }
+                Debug.Log("changing to move right");
+                movingRight = true;
+                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
             }
+        }
     }
 
     public void Damage(int d)
     {
         CurrentHealth -= d;
-        
-    }
 
+    }
 }
+
