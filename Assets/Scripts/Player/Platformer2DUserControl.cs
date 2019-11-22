@@ -8,7 +8,7 @@ namespace UnityStandardAssets._2D
     public class Platformer2DUserControl : MonoBehaviour
     {
         private PlatformerCharacter2D m_Character;
-        private bool m_Jump;
+        public bool m_Jump;
 
 
         private void Awake()
@@ -28,7 +28,7 @@ namespace UnityStandardAssets._2D
             {
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-                Debug.Log(m_Jump);
+                
             }
 
             // Pass all parameters to the character control script.

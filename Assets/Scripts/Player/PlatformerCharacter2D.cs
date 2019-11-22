@@ -6,7 +6,7 @@ namespace UnityStandardAssets._2D
     public class PlatformerCharacter2D : MonoBehaviour
     {
         [SerializeField] private float m_MaxSpeed = 20f;                    // Base speed the player can travel in the x axis.
-        [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.      
+        [SerializeField] private float m_JumpForce = 60f;                  // Amount of force added when the player jumps.      
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private LayerMask m_WhatIsWall;                    // Mask determining what is a wall
@@ -118,7 +118,7 @@ namespace UnityStandardAssets._2D
                 }
             }
             // If the player should jump...
-            if ((m_Grounded && jump) || (m_TouchingWall && jump))
+            if ((m_Grounded && jump && m_Anim.GetBool("Grounded")) || (m_TouchingWall && jump))
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
