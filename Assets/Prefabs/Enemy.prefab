@@ -350,4 +350,5 @@ MonoBehaviour:
   TriggerZone: {fileID: 1882393957728290579}
   Invincible: 0
   LifeTake: 20
+  player: {fileID: 327856080089856086, guid: af5ab6e399aa46b4b84b0ea77af42e32, type: 3}
   anim: {fileID: 1882393958553992329}
