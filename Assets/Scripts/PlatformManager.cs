@@ -10,11 +10,15 @@ public class PlatformManager : MonoBehaviour
     GameObject FallingPlatform;
 
     [SerializeField]
-    private float distanceX;
+    public float distanceX = -5f;
     [SerializeField]
-    private float distanceY;
+    public float distanceY = .25f;
+    [SerializeField]
+    public float distanceX2 = -1f;
+    [SerializeField]
+    public float distanceY2 = .50f;
 
-     void Awake()
+    void Awake()
     {
         if (Instance == null)
             Instance = this;
@@ -25,6 +29,7 @@ public class PlatformManager : MonoBehaviour
     void Start()
     {
         Instantiate(FallingPlatform, new Vector2(distanceX,distanceY), FallingPlatform.transform.rotation);
+        Instantiate(FallingPlatform, new Vector2(distanceX2, distanceY2), FallingPlatform.transform.rotation);
     }
 
   IEnumerator SpawnPlatform(Vector2 spawnPosition)
