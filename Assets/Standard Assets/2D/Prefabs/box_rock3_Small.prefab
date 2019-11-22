@@ -10,17 +10,22 @@ PrefabInstance:
     - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_Name
-      value: box_rock3 (5)
+      value: box_rock3_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961390978666304717, guid: 9f3960450d0ecf449b895c33373a8cd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.011
+      value: 3.716
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4745007
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304718, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
@@ -70,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 4961390978666304719, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_Size.x
-      value: 2.532668
+      value: 2.6042857
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304716, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
@@ -80,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 4961390978666304716, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 2.532668
+      value: 2.6042857
       objectReference: {fileID: 0}
     - target: {fileID: 4961390978666304716, guid: 9f3960450d0ecf449b895c33373a8cd1,
         type: 3}
